@@ -1,8 +1,18 @@
 <html>
-  <head></head>
+  <head><title>Secret Number Guessing Game</title></head>
   <body>
-  <p><%= "The secret number is #{number}." %>
+  <h1>Welcome to the Secret Number Guessing Game</h1>
+  <p><% "The secret number is #{number}." %>
   </p>
+  <h3> Please guess the value of the secret number!</h3><br>
+  <form>
+
+  <input type='text' name='guess'/>
+  <input type='submit' value='Guess!'/>
+</form><br>
+  <p><%= "#{message}" %>
+  </p>
+
 
   </body>
 </html>
