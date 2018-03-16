@@ -3,6 +3,8 @@ require 'sinatra/reloader'
 
 get '/web_guesser' do
   "Hello, World!"
-  x = rand(100)
-  "The secret number is #{x}."
+  number = rand(100)
+  erb :index, :locals => {:number => number}
+
+
 end
